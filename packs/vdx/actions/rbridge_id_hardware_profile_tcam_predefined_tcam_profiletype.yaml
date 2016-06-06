@@ -1,0 +1,57 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_hardware_profile_tcam_predefined_tcam_profiletype.py
+name: rbridge_id_hardware_profile_tcam_predefined_tcam_profiletype
+parameters:
+  delete_hardware_profile:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_predefined:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_tcam:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_tcam_profiletype:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  tcam_profiletype:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+runner_type: python-script

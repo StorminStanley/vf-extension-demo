@@ -1,0 +1,77 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_interface_ve_ip_interface_vlan_ospf_conf_ospf_interface_config_retransmit_interval.py
+name: rbridge_id_interface_ve_ip_interface_vlan_ospf_conf_ospf_interface_config_retransmit_interval
+parameters:
+  delete_interface:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_interface_vlan_ospf_conf:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_ip:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_ospf_interface_config:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_retransmit_interval:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_ve:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 13
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  retransmit_interval:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+runner_type: python-script

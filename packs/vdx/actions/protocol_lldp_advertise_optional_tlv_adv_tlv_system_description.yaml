@@ -1,0 +1,47 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: protocol_lldp_advertise_optional_tlv_adv_tlv_system_description.py
+name: protocol_lldp_advertise_optional_tlv_adv_tlv_system_description
+parameters:
+  delete_adv_tlv_system_description:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_advertise:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_lldp:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_optional_tlv:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_protocol:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 6
+    required: true
+    type: string
+runner_type: python-script

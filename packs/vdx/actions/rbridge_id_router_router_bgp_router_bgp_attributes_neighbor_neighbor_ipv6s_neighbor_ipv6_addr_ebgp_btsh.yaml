@@ -1,0 +1,57 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_router_router_bgp_router_bgp_attributes_neighbor_neighbor_ipv6s_neighbor_ipv6_addr_ebgp_btsh.py
+name: rbridge_id_router_router_bgp_router_bgp_attributes_neighbor_neighbor_ipv6s_neighbor_ipv6_addr_ebgp_btsh
+parameters:
+  delete_ebgp_btsh:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_neighbor:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_router:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_router_bgp:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_router_bgp_attributes:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+runner_type: python-script

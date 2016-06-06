@@ -1,0 +1,97 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_vrf_address_family_ipv6_unicast_ipv6_route_static_route_oif_static_route_dest.py
+name: rbridge_id_vrf_address_family_ipv6_unicast_ipv6_route_static_route_oif_static_route_dest
+parameters:
+  delete_address_family:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 12
+    required: false
+    type: boolean
+  delete_route:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_static_route_dest:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_static_route_oif:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_static_route_oif_name:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_static_route_oif_type:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_unicast:
+    description: Auto generated parameter.
+    position: 13
+    required: false
+    type: boolean
+  delete_vrf:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_vrf_name:
+    description: Auto generated parameter.
+    position: 14
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 15
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 17
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  static_route_dest:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  static_route_oif_name:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  static_route_oif_type:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 16
+    required: true
+    type: string
+  vrf_name:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+runner_type: python-script

@@ -1,0 +1,67 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_router_router_bgp_address_family_ipv4_ipv4_unicast_default_vrf_neighbor_af_ipv4_neighbor_peergroup_holder_af_ipv4_neighbor_peergroup_default_originate_default_originate_status.py
+name: rbridge_id_router_router_bgp_address_family_ipv4_ipv4_unicast_default_vrf_neighbor_af_ipv4_neighbor_peergroup_holder_af_ipv4_neighbor_peergroup_default_originate_default_originate_status
+parameters:
+  delete_address_family:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_default_originate:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_default_originate_status:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_default_vrf:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_neighbor:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_router:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_router_bgp:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+runner_type: python-script

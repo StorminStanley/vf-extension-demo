@@ -1,0 +1,72 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_fortygigabitethernet_storm_control_ingress_rate_percent.py
+name: interface_fortygigabitethernet_storm_control_ingress_rate_percent
+parameters:
+  delete_fortygigabitethernet:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_ingress:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_protocol_type:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_rate_percent:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_storm_control:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+  protocol_type:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  rate_percent:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+runner_type: python-script

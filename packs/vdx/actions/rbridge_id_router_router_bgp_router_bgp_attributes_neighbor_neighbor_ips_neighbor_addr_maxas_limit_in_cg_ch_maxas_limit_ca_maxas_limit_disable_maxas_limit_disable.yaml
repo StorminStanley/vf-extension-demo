@@ -1,0 +1,97 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_router_router_bgp_router_bgp_attributes_neighbor_neighbor_ips_neighbor_addr_maxas_limit_in_cg_ch_maxas_limit_ca_maxas_limit_disable_maxas_limit_disable.py
+name: rbridge_id_router_router_bgp_router_bgp_attributes_neighbor_neighbor_ips_neighbor_addr_maxas_limit_in_cg_ch_maxas_limit_ca_maxas_limit_disable_maxas_limit_disable
+parameters:
+  delete_ca_maxas_limit_disable:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_ch_maxas_limit:
+    description: Auto generated parameter.
+    position: 11
+    required: false
+    type: boolean
+  delete_in_cg:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_maxas_limit:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_maxas_limit_disable:
+    description: Auto generated parameter.
+    position: 14
+    required: false
+    type: boolean
+  delete_neighbor:
+    description: Auto generated parameter.
+    position: 12
+    required: false
+    type: boolean
+  delete_neighbor_addr:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_neighbor_ips:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  delete_router:
+    description: Auto generated parameter.
+    position: 13
+    required: false
+    type: boolean
+  delete_router_bgp:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_router_bgp_attributes:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_router_bgp_neighbor_address:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 15
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 17
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  router_bgp_neighbor_address:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 16
+    required: true
+    type: string
+runner_type: python-script

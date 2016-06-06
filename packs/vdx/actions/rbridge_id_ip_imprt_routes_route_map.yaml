@@ -1,0 +1,67 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_ip_imprt_routes_route_map.py
+name: rbridge_id_ip_imprt_routes_route_map
+parameters:
+  delete_imprt:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_ip:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_route_map:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_routes:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_src_vrf:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  route_map:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  src_vrf:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+runner_type: python-script

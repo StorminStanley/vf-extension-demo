@@ -1,0 +1,42 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: protocol_lldp_hello.py
+name: protocol_lldp_hello
+parameters:
+  delete_hello:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_lldp:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_protocol:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  hello:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  host:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 6
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+runner_type: python-script

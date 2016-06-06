@@ -1,0 +1,62 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_ip_extcommunity_list_ext_community_expr.py
+name: rbridge_id_ip_extcommunity_list_ext_community_expr
+parameters:
+  delete_ext_community_expr:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_extcommunity_list:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_extcommunity_list_num:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_ip:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  ext_community_expr:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  extcommunity_list_num:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  host:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+runner_type: python-script

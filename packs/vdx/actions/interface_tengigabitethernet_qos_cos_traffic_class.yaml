@@ -1,0 +1,57 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_tengigabitethernet_qos_cos_traffic_class.py
+name: interface_tengigabitethernet_qos_cos_traffic_class
+parameters:
+  cos_traffic_class:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  delete_cos_traffic_class:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_qos:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_tengigabitethernet:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+runner_type: python-script

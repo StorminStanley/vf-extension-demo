@@ -1,0 +1,52 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_fortygigabitethernet_fcoeport_ns_ip_registration.py
+name: interface_fortygigabitethernet_fcoeport_ns_ip_registration
+parameters:
+  delete_fcoeport:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_fortygigabitethernet:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_ns_ip_registration:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 6
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+runner_type: python-script

@@ -1,0 +1,72 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_openflow_logical_instance_passive_no_ssl_passive_controller_vrf.py
+name: rbridge_id_openflow_logical_instance_passive_no_ssl_passive_controller_vrf
+parameters:
+  delete_instance_id:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_logical_instance:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_no_ssl:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_openflow:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_passive:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_passive_controller_vrf:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  instance_id:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+  passive_controller_vrf:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+runner_type: python-script

@@ -1,0 +1,87 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_threshold_monitor_security_policy_area_threshold_sec_high_threshold.py
+name: rbridge_id_threshold_monitor_security_policy_area_threshold_sec_high_threshold
+parameters:
+  delete_area:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_policy:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  delete_sec_area_value:
+    description: Auto generated parameter.
+    position: 11
+    required: false
+    type: boolean
+  delete_sec_high_threshold:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_sec_policy_name:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_security:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_threshold:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_threshold_monitor:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 13
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 15
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+  sec_area_value:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  sec_high_threshold:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  sec_policy_name:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 14
+    required: true
+    type: string
+runner_type: python-script

@@ -1,0 +1,97 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_vlan_interface_vlan_ip_igmp_static_group_interface.py
+name: interface_vlan_interface_vlan_ip_igmp_static_group_interface
+parameters:
+  delete_if_type:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_igmp:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_interface_vlan:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_ip:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_mcast_address:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  delete_static_group:
+    description: Auto generated parameter.
+    position: 13
+    required: false
+    type: boolean
+  delete_value:
+    description: Auto generated parameter.
+    position: 14
+    required: false
+    type: boolean
+  delete_vlan:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 15
+    required: true
+    type: string
+  if_type:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  interface:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+  mcast_address:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 17
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 16
+    required: true
+    type: string
+  value:
+    description: Auto generated parameter.
+    position: 6
+    required: true
+    type: string
+runner_type: python-script
