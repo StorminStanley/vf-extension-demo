@@ -1,0 +1,6 @@
+---
+name: "vf_extension_revert"
+action_ref: "vcs-demo.vf_extension_revert"
+description: "Revert VF Extension Workflow"
+formats:
+  - "vfextension revert on {{host}} {{rbridge_id}} {{username=admin}} {{password=password}}"

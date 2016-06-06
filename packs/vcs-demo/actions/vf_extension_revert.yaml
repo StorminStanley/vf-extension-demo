@@ -1,0 +1,28 @@
+---
+description: "VF Extension Revert"
+enabled: true
+entry_point: 'workflows/vf_extension_revert.yaml'
+runner_type: mistral-v2
+name: "vf_extension_revert"
+parameters:
+     username:
+         type: "string"
+     password:
+         type: "string"
+     host:
+         type: "string"
+         default: "10.254.4.115"
+     loopback_id:
+         type: "string"
+         default: "1"
+     vlan:
+         type: "string"
+         default: "54"
+     rbridge_id:
+         type: "array"
+         default:
+            - "1"
+            - "2"
+     name:
+         type: "string"
+         default: "Ext1"

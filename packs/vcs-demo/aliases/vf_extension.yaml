@@ -1,0 +1,6 @@
+---
+name: "vf_extension"
+action_ref: "vcs-demo.vf_extension"
+description: "Run VF Extension Workflow"
+formats:
+  - "vfextension on {{host_1}} {{host_3}} {{username=admin}} {{password=password}}"

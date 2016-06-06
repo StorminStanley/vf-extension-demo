@@ -1,0 +1,102 @@
+---
+version: '2.0'
+name: vcs-demo.configure_vtep
+
+workflows:
+  main:
+    input:
+      - loopback_address
+      - loopback_id
+      - vlan
+      - ve_ip
+      - vrrpe_virtual_ip
+      - vrid
+      - vrname
+      - rbridge_id
+      - username
+      - password
+      - host
+    tasks:
+        add_ve_interface:
+            action: vdx.interface_vlan_interface_vlan_vlan_name
+            input:
+                name: <% $.vlan %>
+                vlan_name: "VF Extension Network"
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Successfully added VE Interface"
+            on-success:
+                - set_ve_ip
+        set_ve_ip:
+            action: vdx.rbridge_id_interface_ve_ip_ip_config_address_address
+            input:
+                rbridge_id: <% $.rbridge_id %>
+                name: <% $.vlan %>
+                address: <% $.ve_ip %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Successfully set VE IP Address"
+            on-success:
+                - no_shut_ve
+        no_shut_ve:
+            action: vdx.rbridge_id_interface_ve_shutdown
+            input:
+                rbridge_id: <% $.rbridge_id %>
+                name: <% $.vlan %>
+                delete_shutdown: True
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Successfully noshut VE Interface"
+            on-success:
+                - rbridge_loopback_address
+        rbridge_loopback_address:
+            action: vdx.rbridge_id_interface_loopback_ip_ip_config_address_address
+            input:
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+                id: <% $.loopback_id %>
+                rbridge_id: <% $.rbridge_id %>
+                address: <% $.loopback_address %>
+            on-success:
+                - rbridge_loopback_ospf
+        rbridge_loopback_ospf:
+            action: vdx.rbridge_id_interface_loopback_ip_interface_loopback_ospf_conf_ospf1_area
+            input:
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+                id: <% $.loopback_id %>
+                area: "0"
+                rbridge_id: <% $.rbridge_id %>
+            on-success:
+                - no_shut_loopback
+        no_shut_loopback:
+            action: vdx.rbridge_id_interface_loopback_intf_loopback_shutdown
+            input:
+                rbridge_id: <% $.rbridge_id %>
+                id: <% $.loopback_id %>
+                delete_shutdown: True
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Successfully noshut VE Interface"
+            on-success:
+                - rbridge_int_ve_address
+        rbridge_int_ve_address:
+            action: vdx.rbridge_id_interface_ve_vrrpe_virtual_ip_virtual_ipaddr
+            input:
+                virtual_ipaddr: <% $.vrrpe_virtual_ip %>
+                name: <% $.vrname %>
+                vrid: <% $.vrid %>
+                rbridge_id: <% $.rbridge_id %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>

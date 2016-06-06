@@ -1,0 +1,141 @@
+--- 
+name: vcs-demo.vf_extension
+version: "2.0"
+workflows: 
+  main: 
+    input: 
+          - username
+          - password
+          - host_1
+          - host_2
+          - host_3
+          - host_4
+          - loopback_address_1
+          - loopback_address_2
+          - loopback_address_3
+          - loopback_address_4
+          - loopback_id_1
+          - loopback_id_2
+          - loopback_id_3
+          - loopback_id_4
+          - vlan_1
+          - vlan_2
+          - vlan_3
+          - vlan_4
+          - ve_ip_1
+          - ve_ip_2
+          - ve_ip_3
+          - ve_ip_4
+          - vrrpe_virtual_ip_1
+          - vrrpe_virtual_ip_2
+          - vrrpe_virtual_ip_3
+          - vrrpe_virtual_ip_4
+          - vrid_1
+          - vrid_2
+          - vrid_3
+          - vrid_4
+          - vrname_1
+          - vrname_2
+          - vrname_3
+          - vrname_4
+          - rbridge_id_1
+          - rbridge_id_2
+          - rbridge_id_3
+          - rbridge_id_4
+          - site_name_1
+          - site_name_2
+          - og_address_1
+          - og_address_2
+    tasks: 
+      configure_overlay_gateway_1: 
+        action: vcs-demo.configure_overlay_gateway
+        input: 
+          address: <% $.og_address_1 %>
+          gw_type: layer2-extension
+          host: <% $.host_1 %>
+          loopback_id: "1"
+          name: Ext1
+          password: <% $.password %>
+          rb_add: "1,2"
+          site_name: <% $.site_name_1 %>
+          username: <% $.username %>
+          vlan: "54"
+        join: all
+      configure_overlay_gateway_2: 
+        action: vcs-demo.configure_overlay_gateway
+        input: 
+          address: <% $.og_address_2 %>
+          gw_type: layer2-extension
+          host: <% $.host_3 %>
+          loopback_id: "1"
+          name: Ext1
+          password: <% $.password %>
+          rb_add: "3,4"
+          site_name: <% $.site_name_2 %>
+          username: <% $.username %>
+          vlan: "54"
+        join: all
+      configure_vtep_1: 
+        action: vcs-demo.configure_vtep
+        input: 
+          host: <% $.host_1 %>
+          loopback_address: <% $.loopback_address_1 %>
+          loopback_id: <% $.loopback_id_1 %>
+          password: <% $.password %>
+          rbridge_id: <% $.rbridge_id_1 %>
+          username: <% $.username %>
+          ve_ip: <% $.ve_ip_1 %>
+          vlan: <% $.vlan_1 %>
+          vrid: <% $.vrid_1 %>
+          vrname: <% $.vrname_1 %>
+          vrrpe_virtual_ip: <% $.vrrpe_virtual_ip_1 %>
+        on-success: 
+          - configure_overlay_gateway_1
+      configure_vtep_2: 
+        action: vcs-demo.configure_vtep
+        input: 
+          host: <% $.host_2 %>
+          loopback_address: <% $.loopback_address_2 %>
+          loopback_id: <% $.loopback_id_2 %>
+          password: <% $.password %>
+          rbridge_id: <% $.rbridge_id_2 %>
+          username: <% $.username %>
+          ve_ip: <% $.ve_ip_2 %>
+          vlan: <% $.vlan_2 %>
+          vrid: <% $.vrid_2 %>
+          vrname: <% $.vrname_2 %>
+          vrrpe_virtual_ip: <% $.vrrpe_virtual_ip_2 %>
+        on-success: 
+          - configure_overlay_gateway_1
+      configure_vtep_3: 
+        action: vcs-demo.configure_vtep
+        input: 
+          host: <% $.host_3 %>
+          loopback_address: <% $.loopback_address_3 %>
+          loopback_id: <% $.loopback_id_3 %>
+          password: <% $.password %>
+          rbridge_id: <% $.rbridge_id_3 %>
+          username: <% $.username %>
+          ve_ip: <% $.ve_ip_3 %>
+          vlan: <% $.vlan_3 %>
+          vrid: <% $.vrid_3 %>
+          vrname: <% $.vrname_3 %>
+          vrrpe_virtual_ip: <% $.vrrpe_virtual_ip_3 %>
+        on-success: 
+          - configure_overlay_gateway_2
+      configure_vtep_4: 
+        action: vcs-demo.configure_vtep
+        input: 
+          host: <% $.host_4 %>
+          loopback_address: <% $.loopback_address_4 %>
+          loopback_id: <% $.loopback_id_4 %>
+          password: <% $.password %>
+          rbridge_id: <% $.rbridge_id_4 %>
+          username: <% $.username %>
+          ve_ip: <% $.ve_ip_4 %>
+          vlan: <% $.vlan_4 %>
+          vrid: <% $.vrid_4 %>
+          vrname: <% $.vrname_4 %>
+          vrrpe_virtual_ip: <% $.vrrpe_virtual_ip_4 %>
+        on-success: 
+          - configure_overlay_gateway_2
