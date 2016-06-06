@@ -1,0 +1,37 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_interface_loopback_ip_interface_loopback_ospf_conf_ospf1_area.py
+name: rbridge_id_interface_loopback_ip_interface_loopback_ospf_conf_ospf1_area
+parameters:
+  area:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  host:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  id:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+runner_type: python-script

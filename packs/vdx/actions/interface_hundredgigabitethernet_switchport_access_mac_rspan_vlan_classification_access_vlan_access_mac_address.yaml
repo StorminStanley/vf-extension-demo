@@ -1,0 +1,82 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_hundredgigabitethernet_switchport_access_mac_rspan_vlan_classification_access_vlan_access_mac_address.py
+name: interface_hundredgigabitethernet_switchport_access_mac_rspan_vlan_classification_access_vlan_access_mac_address
+parameters:
+  access_mac_address:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  access_vlan_id:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  delete_access:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_access_mac_address:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_access_mac_rspan_vlan_classification:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_access_vlan_id:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_hundredgigabitethernet:
+    description: Auto generated parameter.
+    position: 11
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  delete_switchport:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_vlan:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 14
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 13
+    required: true
+    type: string
+runner_type: python-script

@@ -1,0 +1,72 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_fortygigabitethernet_ip_pbr_interface_ip_policy_route_map_route_map_name.py
+name: interface_fortygigabitethernet_ip_pbr_interface_ip_policy_route_map_route_map_name
+parameters:
+  delete_fortygigabitethernet:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_ip:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_ip_pbr_interface:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_policy:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_route_map:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_route_map_name:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+  route_map_name:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+runner_type: python-script

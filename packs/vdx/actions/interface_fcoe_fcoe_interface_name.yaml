@@ -1,0 +1,42 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_fcoe_fcoe_interface_name.py
+name: interface_fcoe_fcoe_interface_name
+parameters:
+  delete_fcoe:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_fcoe_interface_name:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  fcoe_interface_name:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  host:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 6
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+runner_type: python-script

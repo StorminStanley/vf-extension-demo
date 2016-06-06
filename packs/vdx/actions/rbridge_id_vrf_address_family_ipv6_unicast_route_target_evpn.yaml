@@ -1,0 +1,87 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_vrf_address_family_ipv6_unicast_route_target_evpn.py
+name: rbridge_id_vrf_address_family_ipv6_unicast_route_target_evpn
+parameters:
+  action:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  delete_action:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_address_family:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_evpn:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_route_target:
+    description: Auto generated parameter.
+    position: 11
+    required: false
+    type: boolean
+  delete_target_community:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_unicast:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  delete_vrf:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_vrf_name:
+    description: Auto generated parameter.
+    position: 12
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 13
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 15
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  target_community:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 14
+    required: true
+    type: string
+  vrf_name:
+    description: Auto generated parameter.
+    position: 6
+    required: true
+    type: string
+runner_type: python-script

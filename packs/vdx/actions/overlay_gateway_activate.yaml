@@ -1,0 +1,42 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: overlay_gateway_activate.py
+name: overlay_gateway_activate
+parameters:
+  delete_activate:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_overlay_gateway:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 6
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+runner_type: python-script

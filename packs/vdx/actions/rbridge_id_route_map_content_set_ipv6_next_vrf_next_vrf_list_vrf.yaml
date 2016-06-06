@@ -1,0 +1,107 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_route_map_content_set_ipv6_next_vrf_next_vrf_list_vrf.py
+name: rbridge_id_route_map_content_set_ipv6_next_vrf_next_vrf_list_vrf
+parameters:
+  action_rm:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  delete_action_rm:
+    description: Auto generated parameter.
+    position: 15
+    required: false
+    type: boolean
+  delete_content:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_instance:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 11
+    required: false
+    type: boolean
+  delete_next_hop:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_next_vrf:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_next_vrf_list:
+    description: Auto generated parameter.
+    position: 14
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 13
+    required: false
+    type: boolean
+  delete_route_map:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_set:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_vrf:
+    description: Auto generated parameter.
+    position: 12
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 17
+    required: true
+    type: string
+  instance:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 16
+    required: true
+    type: string
+  next_hop:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 19
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 18
+    required: true
+    type: string
+  vrf:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+runner_type: python-script

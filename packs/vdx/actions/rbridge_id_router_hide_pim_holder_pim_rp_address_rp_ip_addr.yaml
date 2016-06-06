@@ -1,0 +1,62 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_router_hide_pim_holder_pim_rp_address_rp_ip_addr.py
+name: rbridge_id_router_hide_pim_holder_pim_rp_address_rp_ip_addr
+parameters:
+  delete_hide_pim_holder:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_pim:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_router:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_rp_address:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_rp_ip_addr:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  rp_ip_addr:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+runner_type: python-script

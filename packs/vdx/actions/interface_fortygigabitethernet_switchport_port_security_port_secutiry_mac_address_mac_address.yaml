@@ -1,0 +1,77 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_fortygigabitethernet_switchport_port_security_port_secutiry_mac_address_mac_address.py
+name: interface_fortygigabitethernet_switchport_port_security_port_secutiry_mac_address_mac_address
+parameters:
+  delete_fortygigabitethernet:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_mac_address:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_port_sec_vlan:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  delete_port_security:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_port_secutiry_mac_address:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_switchport:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  mac_address:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 13
+    required: true
+    type: string
+  port_sec_vlan:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+runner_type: python-script

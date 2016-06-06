@@ -1,0 +1,72 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_tengigabitethernet_storm_control_ingress_rate_bps.py
+name: interface_tengigabitethernet_storm_control_ingress_rate_bps
+parameters:
+  delete_ingress:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_protocol_type:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_rate_bps:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_storm_control:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_tengigabitethernet:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+  protocol_type:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  rate_bps:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+runner_type: python-script

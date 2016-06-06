@@ -1,0 +1,62 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: protocol_spanning_tree_rpvst_vlan_hello_time.py
+name: protocol_spanning_tree_rpvst_vlan_hello_time
+parameters:
+  delete_hello_time:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_id:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_protocol:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_rpvst:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_spanning_tree:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_vlan:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  hello_time:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  host:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  id:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+runner_type: python-script

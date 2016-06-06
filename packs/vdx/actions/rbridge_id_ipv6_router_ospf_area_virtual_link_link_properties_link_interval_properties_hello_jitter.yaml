@@ -1,0 +1,102 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_ipv6_router_ospf_area_virtual_link_link_properties_link_interval_properties_hello_jitter.py
+name: rbridge_id_ipv6_router_ospf_area_virtual_link_link_properties_link_interval_properties_hello_jitter
+parameters:
+  area_id:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  delete_area:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  delete_area_id:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_hello_jitter:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_link_interval_properties:
+    description: Auto generated parameter.
+    position: 13
+    required: false
+    type: boolean
+  delete_link_properties:
+    description: Auto generated parameter.
+    position: 12
+    required: false
+    type: boolean
+  delete_ospf:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 14
+    required: false
+    type: boolean
+  delete_router:
+    description: Auto generated parameter.
+    position: 15
+    required: false
+    type: boolean
+  delete_virtual_link:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_virtual_link_neighbor:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_vrf:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  hello_jitter:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  host:
+    description: Auto generated parameter.
+    position: 16
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 18
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 17
+    required: true
+    type: string
+  virtual_link_neighbor:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  vrf:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+runner_type: python-script

@@ -1,0 +1,67 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_global_lc_holder_linecard_linecards_linecardType.py
+name: rbridge_id_global_lc_holder_linecard_linecards_linecardType
+parameters:
+  delete_global_lc_holder:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_linecard:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_linecardName:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_linecardType:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_linecards:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  linecardName:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  linecardType:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+runner_type: python-script

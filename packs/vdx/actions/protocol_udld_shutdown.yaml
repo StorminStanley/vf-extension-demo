@@ -1,0 +1,37 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: protocol_udld_shutdown.py
+name: protocol_udld_shutdown
+parameters:
+  delete_protocol:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_shutdown:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_udld:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+runner_type: python-script

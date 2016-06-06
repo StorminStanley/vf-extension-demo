@@ -1,0 +1,62 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_arp_entry_interfacetype_TenGigabitEthernet_TenGigabitEthernet.py
+name: rbridge_id_arp_entry_interfacetype_TenGigabitEthernet_TenGigabitEthernet
+parameters:
+  TenGigabitEthernet:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  arp_ip_address:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  delete_TenGigabitEthernet:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_arp_entry:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_arp_ip_address:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_interfacetype:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+runner_type: python-script

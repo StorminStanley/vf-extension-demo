@@ -1,0 +1,87 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_interface_ve_vrrp_description.py
+name: rbridge_id_interface_ve_vrrp_description
+parameters:
+  delete_description:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 11
+    required: false
+    type: boolean
+  delete_ve:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_version:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_vrid:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_vrrp:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  description:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  host:
+    description: Auto generated parameter.
+    position: 13
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 15
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 14
+    required: true
+    type: string
+  version:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  vrid:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+runner_type: python-script

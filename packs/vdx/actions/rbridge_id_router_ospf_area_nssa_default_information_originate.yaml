@@ -1,0 +1,77 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_router_ospf_area_nssa_default_information_originate.py
+name: rbridge_id_router_ospf_area_nssa_default_information_originate
+parameters:
+  area_id:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  delete_area:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_area_id:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_default_information_originate:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  delete_nssa:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_ospf:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_router:
+    description: Auto generated parameter.
+    position: 9
+    required: false
+    type: boolean
+  delete_vrf:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 13
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 12
+    required: true
+    type: string
+  vrf:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+runner_type: python-script

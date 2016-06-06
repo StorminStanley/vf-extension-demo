@@ -1,0 +1,67 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_fortygigabitethernet_port_profile_to_interface_associations_port_profile_port_port_to_port_profile_domain_association_profile_domain_name.py
+name: interface_fortygigabitethernet_port_profile_to_interface_associations_port_profile_port_port_to_port_profile_domain_association_profile_domain_name
+parameters:
+  delete_fortygigabitethernet:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_port_profile_port:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_port_profile_to_interface_associations:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_port_to_port_profile_domain_association:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_profile_domain_name:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  profile_domain_name:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+runner_type: python-script

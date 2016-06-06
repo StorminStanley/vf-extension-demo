@@ -1,0 +1,67 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_port_channel_switchport_trunk_default_vlan_config_default_transparent_vlan.py
+name: interface_port_channel_switchport_trunk_default_vlan_config_default_transparent_vlan
+parameters:
+  default_transparent_vlan:
+    description: Auto generated parameter.
+    position: 8
+    required: true
+    type: string
+  delete_default_transparent_vlan:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_default_vlan_config:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_port_channel:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  delete_switchport:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_trunk:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+runner_type: python-script

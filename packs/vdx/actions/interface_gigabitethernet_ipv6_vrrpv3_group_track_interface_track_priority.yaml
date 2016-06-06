@@ -1,0 +1,87 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interface_gigabitethernet_ipv6_vrrpv3_group_track_interface_track_priority.py
+name: interface_gigabitethernet_ipv6_vrrpv3_group_track_interface_track_priority
+parameters:
+  delete_gigabitethernet:
+    description: Auto generated parameter.
+    position: 12
+    required: false
+    type: boolean
+  delete_interface:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_interface_name:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_interface_type:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_name:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_track:
+    description: Auto generated parameter.
+    position: 11
+    required: false
+    type: boolean
+  delete_track_priority:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_vrid:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 13
+    required: true
+    type: string
+  interface_name:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+  interface_type:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  name:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 15
+    required: true
+    type: string
+  track_priority:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 14
+    required: true
+    type: string
+  vrid:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+runner_type: python-script

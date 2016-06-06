@@ -1,0 +1,67 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_http_server_http_vrf_cont_use_vrf_http_vrf_shutdown.py
+name: rbridge_id_http_server_http_vrf_cont_use_vrf_http_vrf_shutdown
+parameters:
+  delete_http:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_http_vrf_cont:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  delete_http_vrf_shutdown:
+    description: Auto generated parameter.
+    position: 7
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_server:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_use_vrf:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_use_vrf_name:
+    description: Auto generated parameter.
+    position: 4
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 11
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 2
+    required: true
+    type: string
+  use_vrf_name:
+    description: Auto generated parameter.
+    position: 1
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 10
+    required: true
+    type: string
+runner_type: python-script

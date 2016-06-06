@@ -1,0 +1,92 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: rbridge_id_router_router_bgp_address_family_l2vpn_evpn_neighbor_evpn_peer_group_route_map_direction_in_route_map_name_direction_in.py
+name: rbridge_id_router_router_bgp_address_family_l2vpn_evpn_neighbor_evpn_peer_group_route_map_direction_in_route_map_name_direction_in
+parameters:
+  delete_address_family:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_direction_in:
+    description: Auto generated parameter.
+    position: 0
+    required: false
+    type: boolean
+  delete_evpn:
+    description: Auto generated parameter.
+    position: 6
+    required: false
+    type: boolean
+  delete_evpn_neighbor_peergroup_name:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  delete_evpn_peer_group:
+    description: Auto generated parameter.
+    position: 8
+    required: false
+    type: boolean
+  delete_neighbor:
+    description: Auto generated parameter.
+    position: 12
+    required: false
+    type: boolean
+  delete_rbridge_id:
+    description: Auto generated parameter.
+    position: 11
+    required: false
+    type: boolean
+  delete_route_map:
+    description: Auto generated parameter.
+    position: 5
+    required: false
+    type: boolean
+  delete_route_map_name_direction_in:
+    description: Auto generated parameter.
+    position: 10
+    required: false
+    type: boolean
+  delete_router:
+    description: Auto generated parameter.
+    position: 13
+    required: false
+    type: boolean
+  delete_router_bgp:
+    description: Auto generated parameter.
+    position: 3
+    required: false
+    type: boolean
+  evpn_neighbor_peergroup_name:
+    description: Auto generated parameter.
+    position: 7
+    required: true
+    type: string
+  host:
+    description: Auto generated parameter.
+    position: 14
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 16
+    required: true
+    type: string
+  rbridge_id:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+  route_map_name_direction_in:
+    description: Auto generated parameter.
+    position: 9
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 15
+    required: true
+    type: string
+runner_type: python-script

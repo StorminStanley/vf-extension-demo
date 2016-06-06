@@ -1,0 +1,37 @@
+---
+description: Auto generated action.
+enabled: true
+entry_point: interfaceLinkState_ifIndex.py
+name: interfaceLinkState_ifIndex
+parameters:
+  delete_ifIndex:
+    description: Auto generated parameter.
+    position: 2
+    required: false
+    type: boolean
+  delete_interfaceLinkState:
+    description: Auto generated parameter.
+    position: 1
+    required: false
+    type: boolean
+  host:
+    description: Auto generated parameter.
+    position: 3
+    required: true
+    type: string
+  ifIndex:
+    description: Auto generated parameter.
+    position: 0
+    required: true
+    type: string
+  password:
+    description: Auto generated parameter.
+    position: 5
+    required: true
+    type: string
+  username:
+    description: Auto generated parameter.
+    position: 4
+    required: true
+    type: string
+runner_type: python-script
