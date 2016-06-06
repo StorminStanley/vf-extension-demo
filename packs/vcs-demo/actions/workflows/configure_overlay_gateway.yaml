@@ -1,0 +1,127 @@
+---
+version: '2.0'
+name: vcs-demo.configure_overlay_gateway
+
+workflows:
+  main:
+    input:
+      - name
+      - gw_type
+      - loopback_id
+      - rb_add
+      - site_name
+      - address
+      - vlan
+      - host
+      - username
+      - password
+    tasks:
+        overlay_gateway_name:
+            action: vdx.overlay_gateway_name
+            input:
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Overlay gateway name"
+            on-success:
+               - overlay_gateway_gw_type
+        overlay_gateway_gw_type:
+            action: vdx.overlay_gateway_gw_type
+            input:
+                gw_type: <% $.gw_type %>
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Overlay gateway gw type"
+            on-success:
+               - overlay_gateway_ip_int_lo_id
+        overlay_gateway_ip_int_lo_id:
+            action: vdx.overlay_gateway_ip_interface_loopback_loopback_id
+            input:
+                loopback_id: <% $.loopback_id %>
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Overlay gateway ip interface loopback"
+            on-success:
+               - overlay_gateway_attach_rbridge_id
+        overlay_gateway_attach_rbridge_id:
+            with-items: rbridge in <% list($.rb_add) %>
+            concurrency: 1
+            action: vdx.overlay_gateway_attach_rbridge_id_rb_add
+            input:
+                rb_add: <% $.rbridge %>
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Add gateway attach rbride id"
+            on-success:
+               - overlay_gateway_map_vlan_vni_auto
+        overlay_gateway_map_vlan_vni_auto:
+            action: vdx.overlay_gateway_map_vlan_vni_auto
+            input:
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Add gateway map vlan vni auto"
+            on-success:
+               - overlay_gateway_site_name
+        overlay_gateway_site_name:
+            action: vdx.overlay_gateway_site_name
+            input:
+                site_name: <% $.site_name %>
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Add gateway site name"
+            on-success:
+               - overlay_gateway_site_tun_dst
+        overlay_gateway_site_tun_dst:
+            action: vdx.overlay_gateway_site_tunnel_dst_address
+            input:
+                address: <% $.address %>
+                site_name: <% $.site_name %>
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Add overlay gateway site tunnel dst addr."
+            on-success:
+               - overlay_gateway_site_extend_vlan_add
+        overlay_gateway_site_extend_vlan_add:
+            with-items: vlan_item in <% list($.vlan) %>
+            action: vdx.overlay_gateway_site_extend_vlan_add
+            input:
+                add: <% $.vlan_item %>
+                site_name: <% $.site_name %>
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Added site extend vlan"
+            on-success:
+               - overlay_gateway_activate
+        overlay_gateway_activate:
+            with-items: vlan_item in <% list($.vlan) %>
+            action: vdx.overlay_gateway_activate
+            input:
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Added site extend vlan"

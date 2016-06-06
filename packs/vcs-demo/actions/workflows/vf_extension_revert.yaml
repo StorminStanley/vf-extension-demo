@@ -1,0 +1,51 @@
+---
+version: '2.0'
+name: vcs-demo.vf_extension_revert
+
+workflows:
+  main:
+    input:
+      - name
+      - loopback_id
+      - vlan
+      - rbridge_id
+      - username
+      - password
+      - host
+    tasks:
+        add_ve_interface:
+            action: vdx.rbridge_id_interface_ve_name
+            with-items: rbridge in <% $.rbridge_id %>
+            input:
+                name: <% $.vlan %>
+                delete_interface: True
+                host: <% $.host %>
+                rbridge_id: <% $.rbridge %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Successfully added VE Interface"
+            on-complete:
+                - rbridge_loopback
+        rbridge_loopback:
+            action: vdx.rbridge_id_interface_loopback_id
+            with-items: rbridge in <% $.rbridge_id %>
+            input:
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+                id: <% $.loopback_id %>
+                rbridge_id: <% $.rbridge %>
+                delete_interface: True
+        overlay_gateway_name:
+            action: vdx.overlay_gateway_name
+            input:
+                delete_overlay_gateway: True
+                name: <% $.name %>
+                host: <% $.host %>
+                username: <% $.username %>
+                password: <% $.password %>
+            publish:
+                status_message: "Overlay gateway name"
+            on-complete:
+                - add_ve_interface

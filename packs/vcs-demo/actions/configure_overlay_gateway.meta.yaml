@@ -1,0 +1,49 @@
+---
+  name: "configure_overlay_gateway"
+  runner_type: mistral-v2
+  description: "Configure gateway type"
+  enabled: true
+  entry_point: "workflows/configure_overlay_gateway.yaml"
+  parameters:
+    username:
+      type: "string"
+      description: "username to log in to device"
+    password:
+      type: "string"
+      description: "password to log in to device"
+    host:
+      type: "string"
+      description: "fqdn/ip of host"
+    name:
+      type: "string"
+      description: "overlay name"
+    gw_type:
+      type: "string"
+      description: "gateway type"
+    loopback_id:
+      type: "string"
+      description: "loopback id"
+    rb_add:
+      type: "string"
+      description: ""
+    site_name:
+      type: "string"
+      description: "site name"
+    address:
+      type: "string"
+      description: "site address"
+    vlan:
+      type: "string"
+      description: "VLAN ID"
+    context:
+      default: {}
+      immutable: true
+      type: object
+    task:
+      default: null
+      immutable: true
+      type: string
+    workflow:
+      default: vcs-demo.configure_overlay_gateway.main
+      immutable: true
+      type: string

@@ -1,0 +1,145 @@
+---
+  description: "VF Extension"
+  enabled: true
+  entry_point: "workflows/vf_extension.yaml"
+  name: "vf_extension"
+  pack: "vcs-demo"
+  parameters: 
+    context: 
+      default: {}
+      immutable: true
+      type: "object"
+    host_1: 
+      default: "10.254.4.116"
+      type: "string"
+    host_2: 
+      default: "10.254.4.116"
+      type: "string"
+    host_3: 
+      default: "10.254.4.111"
+      type: "string"
+    host_4: 
+      default: "10.254.4.111"
+      type: "string"
+    loopback_address_1: 
+      default: "1.1.1.1/32"
+      type: "string"
+    loopback_address_2: 
+      default: "1.1.1.1/32"
+      type: "string"
+    loopback_address_3: 
+      default: "2.2.2.2/32"
+      type: "string"
+    loopback_address_4: 
+      default: "2.2.2.2/32"
+      type: "string"
+    loopback_id_1: 
+      default: "1"
+      type: "string"
+    loopback_id_2: 
+      default: "1"
+      type: "string"
+    loopback_id_3: 
+      default: "1"
+      type: "string"
+    loopback_id_4: 
+      default: "1"
+      type: "string"
+    og_address_1: 
+      default: "2.2.2.2"
+      type: "string"
+    og_address_2: 
+      default: "1.1.1.1"
+      type: "string"
+    password: 
+      type: "string"
+    rbridge_id_1: 
+      default: "1"
+      type: "string"
+    rbridge_id_2: 
+      default: "2"
+      type: "string"
+    rbridge_id_3: 
+      default: "3"
+      type: "string"
+    rbridge_id_4: 
+      default: "4"
+      type: "string"
+    site_name_1: 
+      default: "Site1"
+      type: "string"
+    site_name_2: 
+      default: "Site2"
+      type: "string"
+    task: 
+      default: null
+      immutable: true
+      type: "string"
+    username: 
+      type: "string"
+    ve_ip_1: 
+      default: "10.0.0.2/24"
+      type: "string"
+    ve_ip_2: 
+      default: "10.0.0.3/24"
+      type: "string"
+    ve_ip_3: 
+      default: "10.0.1.2/24"
+      type: "string"
+    ve_ip_4: 
+      default: "10.0.1.3/24"
+      type: "string"
+    vlan_1: 
+      default: "54"
+      type: "string"
+    vlan_2: 
+      default: "54"
+      type: "string"
+    vlan_3: 
+      default: "54"
+      type: "string"
+    vlan_4: 
+      default: "54"
+      type: "string"
+    vrid_1: 
+      default: "54"
+      type: "string"
+    vrid_2: 
+      default: "54"
+      type: "string"
+    vrid_3: 
+      default: "54"
+      type: "string"
+    vrid_4: 
+      default: "54"
+      type: "string"
+    vrname_1: 
+      default: "54"
+      type: "string"
+    vrname_2: 
+      default: "54"
+      type: "string"
+    vrname_3: 
+      default: "54"
+      type: "string"
+    vrname_4: 
+      default: "54"
+      type: "string"
+    vrrpe_virtual_ip_1: 
+      default: "10.0.0.1"
+      type: "string"
+    vrrpe_virtual_ip_2: 
+      default: "10.0.0.1"
+      type: "string"
+    vrrpe_virtual_ip_3: 
+      default: "10.0.1.1"
+      type: "string"
+    vrrpe_virtual_ip_4: 
+      default: "10.0.1.1"
+      type: "string"
+    workflow: 
+      default: "vcs-demo.vf_extension.main"
+      immutable: true
+      type: "string"
+  runner_type: "mistral-v2"
+

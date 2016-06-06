@@ -1,0 +1,52 @@
+---
+  name: "configure_vtep"
+  runner_type: mistral-v2
+  description: "Configure VTEP"
+  enabled: true
+  entry_point: "workflows/configure_vtep.yaml"
+  parameters:
+    loopback_id:
+      type: "string"
+      description: "ID of loopback to manage"
+    loopback_address:
+      type: "string"
+      description: "address to set on loopback interface"
+    ve_ip:
+      type: "string"
+      description: "VE ip address"
+    vlan:
+      type: "string"
+      description: "VLAN number"
+    vrrpe_virtual_ip:
+      type: "string"
+      description: "VRRP Virtual IP"
+    vrid:
+      type: "string"
+      description: "vr id"
+    vrname:
+      type: "string"
+      description: "vr name"
+    rbridge_id:
+      type: "string"
+      description: "rbridge id"
+    username:
+      type: "string"
+      description: "username to log in to device"
+    password:
+      type: "string"
+      description: "password to log in to device"
+    host:
+      type: "string"
+      description: "fqdn/ip of host"
+    context:
+      default: {}
+      immutable: true
+      type: object
+    task:
+      default: null
+      immutable: true
+      type: string
+    workflow:
+      default: vcs-demo.configure_vtep.main
+      immutable: true
+      type: string
